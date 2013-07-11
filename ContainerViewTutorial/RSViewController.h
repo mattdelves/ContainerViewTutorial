@@ -10,4 +10,8 @@
 
 @interface RSViewController : UIViewController
 
+- (void)switchToBlueColorController;
+- (void)switchToGreenColorController;
+- (void)switchToRedColorController;
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38EFA1DA86C74302945B6294 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D37BE0AAF434F3091ED8D79 /* libPods.a */; };
 		C9362860178E5F9900AB1A36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C936285F178E5F9900AB1A36 /* UIKit.framework */; };
 		C9362862178E5F9900AB1A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9362861178E5F9900AB1A36 /* Foundation.framework */; };
 		C9362864178E5F9900AB1A36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9362863178E5F9900AB1A36 /* CoreGraphics.framework */; };
@@ -17,10 +18,14 @@
 		C9362874178E5F9900AB1A36 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9362873178E5F9900AB1A36 /* Default@2x.png */; };
 		C9362876178E5F9900AB1A36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9362875178E5F9900AB1A36 /* Default-568h@2x.png */; };
 		C9362879178E5F9900AB1A36 /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9362878178E5F9900AB1A36 /* RSViewController.m */; };
-		C936287C178E5F9900AB1A36 /* RSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C936287A178E5F9900AB1A36 /* RSViewController.xib */; };
+		C936288A178E603200AB1A36 /* RSButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9362883178E603200AB1A36 /* RSButtonView.m */; };
+		C936288B178E603200AB1A36 /* RSButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9362885178E603200AB1A36 /* RSButtonViewController.m */; };
+		C936288C178E603200AB1A36 /* RSColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9362887178E603200AB1A36 /* RSColorViewController.m */; };
+		C936288D178E603200AB1A36 /* UIViewController+RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9362889178E603200AB1A36 /* UIViewController+RSViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D37BE0AAF434F3091ED8D79 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C936285C178E5F9900AB1A36 /* ContainerViewTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerViewTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C936285F178E5F9900AB1A36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9362861178E5F9900AB1A36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,7 +41,15 @@
 		C9362875178E5F9900AB1A36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C9362877178E5F9900AB1A36 /* RSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
 		C9362878178E5F9900AB1A36 /* RSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
-		C936287B178E5F9900AB1A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RSViewController.xib; sourceTree = "<group>"; };
+		C9362882178E603200AB1A36 /* RSButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSButtonView.h; sourceTree = "<group>"; };
+		C9362883178E603200AB1A36 /* RSButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSButtonView.m; sourceTree = "<group>"; };
+		C9362884178E603200AB1A36 /* RSButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSButtonViewController.h; sourceTree = "<group>"; };
+		C9362885178E603200AB1A36 /* RSButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSButtonViewController.m; sourceTree = "<group>"; };
+		C9362886178E603200AB1A36 /* RSColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSColorViewController.h; sourceTree = "<group>"; };
+		C9362887178E603200AB1A36 /* RSColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSColorViewController.m; sourceTree = "<group>"; };
+		C9362888178E603200AB1A36 /* UIViewController+RSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RSViewController.h"; sourceTree = "<group>"; };
+		C9362889178E603200AB1A36 /* UIViewController+RSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RSViewController.m"; sourceTree = "<group>"; };
+		D2454F1F730D43F5B2C5CFC1 /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 				C9362860178E5F9900AB1A36 /* UIKit.framework in Frameworks */,
 				C9362862178E5F9900AB1A36 /* Foundation.framework in Frameworks */,
 				C9362864178E5F9900AB1A36 /* CoreGraphics.framework in Frameworks */,
+				38EFA1DA86C74302945B6294 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +73,7 @@
 				C9362865178E5F9900AB1A36 /* ContainerViewTutorial */,
 				C936285E178E5F9900AB1A36 /* Frameworks */,
 				C936285D178E5F9900AB1A36 /* Products */,
+				D2454F1F730D43F5B2C5CFC1 /* Pods/Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,7 @@
 				C936285F178E5F9900AB1A36 /* UIKit.framework */,
 				C9362861178E5F9900AB1A36 /* Foundation.framework */,
 				C9362863178E5F9900AB1A36 /* CoreGraphics.framework */,
+				7D37BE0AAF434F3091ED8D79 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,11 +99,18 @@
 		C9362865178E5F9900AB1A36 /* ContainerViewTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				C9362882178E603200AB1A36 /* RSButtonView.h */,
+				C9362883178E603200AB1A36 /* RSButtonView.m */,
+				C9362884178E603200AB1A36 /* RSButtonViewController.h */,
+				C9362885178E603200AB1A36 /* RSButtonViewController.m */,
+				C9362886178E603200AB1A36 /* RSColorViewController.h */,
+				C9362887178E603200AB1A36 /* RSColorViewController.m */,
+				C9362888178E603200AB1A36 /* UIViewController+RSViewController.h */,
+				C9362889178E603200AB1A36 /* UIViewController+RSViewController.m */,
 				C936286E178E5F9900AB1A36 /* RSAppDelegate.h */,
 				C936286F178E5F9900AB1A36 /* RSAppDelegate.m */,
 				C9362877178E5F9900AB1A36 /* RSViewController.h */,
 				C9362878178E5F9900AB1A36 /* RSViewController.m */,
-				C936287A178E5F9900AB1A36 /* RSViewController.xib */,
 				C9362866178E5F9900AB1A36 /* Supporting Files */,
 			);
 			path = ContainerViewTutorial;
@@ -114,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C936287F178E5F9900AB1A36 /* Build configuration list for PBXNativeTarget "ContainerViewTutorial" */;
 			buildPhases = (
+				B92B247293414F418ACE6FBF /* Check Pods Manifest.lock */,
 				C9362858178E5F9900AB1A36 /* Sources */,
 				C9362859178E5F9900AB1A36 /* Frameworks */,
 				C936285A178E5F9900AB1A36 /* Resources */,
+				E582F73D430D49BF94B5F31F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +161,11 @@
 				CLASSPREFIX = RS;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Reformed Software";
+				TargetAttributes = {
+					C936285B178E5F9900AB1A36 = {
+						DevelopmentTeam = 74D9UBS5CF;
+					};
+				};
 			};
 			buildConfigurationList = C9362857178E5F9900AB1A36 /* Build configuration list for PBXProject "ContainerViewTutorial" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,11 +193,43 @@
 				C9362872178E5F9900AB1A36 /* Default.png in Resources */,
 				C9362874178E5F9900AB1A36 /* Default@2x.png in Resources */,
 				C9362876178E5F9900AB1A36 /* Default-568h@2x.png in Resources */,
-				C936287C178E5F9900AB1A36 /* RSViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B92B247293414F418ACE6FBF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E582F73D430D49BF94B5F31F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9362858178E5F9900AB1A36 /* Sources */ = {
@@ -177,6 +239,10 @@
 				C936286C178E5F9900AB1A36 /* main.m in Sources */,
 				C9362870178E5F9900AB1A36 /* RSAppDelegate.m in Sources */,
 				C9362879178E5F9900AB1A36 /* RSViewController.m in Sources */,
+				C936288A178E603200AB1A36 /* RSButtonView.m in Sources */,
+				C936288B178E603200AB1A36 /* RSButtonViewController.m in Sources */,
+				C936288C178E603200AB1A36 /* RSColorViewController.m in Sources */,
+				C936288D178E603200AB1A36 /* UIViewController+RSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +255,6 @@
 				C9362869178E5F9900AB1A36 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C936287A178E5F9900AB1A36 /* RSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C936287B178E5F9900AB1A36 /* en */,
-			);
-			name = RSViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,7 +318,9 @@
 		};
 		C9362880178E5F9900AB1A36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2454F1F730D43F5B2C5CFC1 /* Pods/Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ContainerViewTutorial/ContainerViewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "ContainerViewTutorial/ContainerViewTutorial-Info.plist";
@@ -271,7 +331,9 @@
 		};
 		C9362881178E5F9900AB1A36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2454F1F730D43F5B2C5CFC1 /* Pods/Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ContainerViewTutorial/ContainerViewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "ContainerViewTutorial/ContainerViewTutorial-Info.plist";
@@ -299,6 +361,7 @@
 				C9362881178E5F9900AB1A36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
